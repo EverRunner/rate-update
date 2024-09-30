@@ -1,5 +1,4 @@
 "use client";
-import { Typography } from '@mui/material';
 import PageContainer from '@/app/(dashboard)/components/container/PageContainer';
 import ProductPerformance from './ProductPerformance';
 

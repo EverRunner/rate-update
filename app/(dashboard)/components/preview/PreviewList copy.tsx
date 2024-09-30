@@ -19,7 +19,7 @@ import CustomTextField from "@/app/(dashboard)/components/forms/theme-elements/C
 
 
 export default function PreviewCardList() {
-  const [editMode, setEditMode] = React.useState<boolean>(false);;
+  const [editMode, setEditMode] = React.useState<boolean>(false);
 
   const handleEdit = () => {
     console.log(" fire ")

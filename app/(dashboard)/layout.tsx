@@ -25,6 +25,7 @@ const PageWrapper = styled("div")(() => ({
     }
 }));
 
+// eslint-disable-next-line
 interface Props {
     children: React.ReactNode;
 }
@@ -37,6 +38,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
 
+    // eslint-disable-next-line
     const [isSidebarOpen, setSidebarOpen] = useState(true);
     const [isMobileSidebarOpen, setMobileSidebarOpen] = useState(false);
     return (

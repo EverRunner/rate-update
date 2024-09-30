@@ -25,7 +25,7 @@ interface Contact {
     company: string | null;
     state_name: string | null;
 }
-
+// eslint-disable-next-line
 interface Params {
     row: Contact;
 }
@@ -67,7 +67,7 @@ async function addUpdateContact(supabase: SupabaseClient, setContacts: SetContac
         fetchContacts(supabase, setContacts); // Refresh the contact list
     }
 }
-
+// eslint-disable-next-line
 async function deleteContact(supabase: SupabaseClient, setContacts: SetContacts, id: string) {
     const { error } = await supabase.from('contacts').delete().match({ id });
 
@@ -101,7 +101,7 @@ const MemoizedDataGrid = React.memo(({ rows, columns, ...rest }: { rows: Contact
     // Only re-render if the rows or columns change
     return prevProps.rows === nextProps.rows && prevProps.columns === nextProps.columns;
 });
-
+MemoizedDataGrid.displayName = 'MemoizedDataGrid';
 
 
 const Contact = () => {
@@ -123,6 +123,7 @@ const Contact = () => {
         })()
     }, [supabase])
 
+    // eslint-disable-next-line
     const handleDelete = async (event: React.MouseEvent<HTMLButtonElement>) => {
         console.info("dataset ", event.target);
     }

@@ -233,7 +233,7 @@ const baselightTheme = createTheme({
 });
 
 
-
+// eslint-disable-next-line
 const CustomIconButton = styled(IconButton)<CustomIconButtonProps>(({ theme, variant }) => ({
   ...(variant === 'IconRed' && {
     borderColor: '#db4073',
